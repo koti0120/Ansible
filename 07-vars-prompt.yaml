@@ -3,10 +3,10 @@
   vars_prompt:
   - name: USERNAME
     prompt: "please enter your username"
-    private: false
+    private: false #means we can see while entering
   - name: PASSWORD
     prompt: "please enter your password"
-    private: true
+    private: true #means we can't see while entering
   tasks:
   - name: print the information
     ansible.builtin.debug:
