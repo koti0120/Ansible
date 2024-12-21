@@ -1,6 +1,6 @@
 - name: variables
   hosts: localhost
-  vars:
+  vars: #play level variable
     course: "Ansible"
     who: "iam"
   tasks:
