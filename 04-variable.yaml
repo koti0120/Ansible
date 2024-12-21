@@ -1,0 +1,9 @@
+- name: variables
+  hosts: localhost
+  vars: #variable declaration
+    course: "Ansible"
+    who: "iam"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "hello {{who}} practising {{course}}" #to declare the variables in ansible we must provide two flower braces
