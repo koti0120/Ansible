@@ -1,4 +1,4 @@
-- name: data types
+- name: data-types
   hosts: localhost
   var:
     course: tool #string
