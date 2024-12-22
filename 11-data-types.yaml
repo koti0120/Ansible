@@ -1,0 +1,16 @@
+- name: data types
+  hosts: localhost
+  var:
+    course: tool #string
+    tools: #list
+    - Linux
+    - Shell-script
+    - Ansible
+    experience: #map or dictionary
+      docker: 3 #number
+      kubernetes: 3
+    RealProject: true #boolean
+  tasks:
+  - name: print the variables
+    ansible.builtin.debug:
+      msg: "course is: {{course}}, tools covered: {{tools}}, Experience is: {{experience}} and is real project is: {{RealProject}}"
