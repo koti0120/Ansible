@@ -1,6 +1,6 @@
 - name: data-types
   hosts: localhost
-  var:
+  vars:
     course: tool #string
     tools: #list
     - Linux
