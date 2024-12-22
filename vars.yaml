@@ -1,4 +1,4 @@
 course: "Ansible"
 who: "iam"
 greetings: "Hi"
-wishes: "morning from vars.yaml file"
+# wishes: "morning from vars.yaml file"
