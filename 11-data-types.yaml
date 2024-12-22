@@ -1,7 +1,7 @@
 - name: data-types
   hosts: localhost
   vars:
-    course: tool #string
+    course: Devops #string
     tools: #list
     - Linux
     - Shell-script
