@@ -25,3 +25,11 @@
       numbers: [ 10,20,150,250,845,999]
     ansible.builtin.debug:
       msg: "max number is: {{numbers | max}}, min number is: {{numbers | min}}"
+  - name: conver dictionary/map into items/lists
+    vars:
+      my_dict:
+        Name: Kiyansh
+        course: devops
+        current_tool: ansible
+    ansible.builtin.debug:
+      msg: "convert dictionary to lists is: {{my_dict | dict2items}} "
