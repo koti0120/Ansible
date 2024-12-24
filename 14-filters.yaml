@@ -4,4 +4,4 @@
   tasks:
   - name: print the filters information
     ansible.builtin.debug:
-      msg: "Hello, {{KIYANSH}}"
+      msg: "Hello, {{KIYANSH  | default('GOOD MORNING')}}"
