@@ -10,3 +10,8 @@
       tool: ansible
     ansible.builtin.debug:
       msg: "we are practising {{tool | upper}} "
+  - name: lower case
+    vars:
+      subject: DEVOPS
+    ansible.builtin.debug:
+      msg: "lower case is: {{subject | lower}}"
