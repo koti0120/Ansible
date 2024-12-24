@@ -33,3 +33,11 @@
         current_tool: ansible
     ansible.builtin.debug:
       msg: "convert dictionary to lists is: {{my_dict | dict2items}} "
+  - name: convert to items to dictionary
+    vars:
+      my_dict:
+        {'key': 'Name', 'value': 'Kiyansh'}
+        {'key': 'course', 'value': 'devops'}
+        {'key': 'current_tool', 'value': 'ansible'}
+    ansible.builtin.debug:
+      msg: "print the items to dict is: {{my_dict | items2dict}}"
