@@ -5,3 +5,8 @@
   - name: print the filters information
     ansible.builtin.debug:
       msg: "Hello, {{KIYANSH  | default('GOOD MORNING')}}"
+  - name: upper case
+    vars:
+      tool: ansible
+    ansible.builtin.debug:
+      msg: "we are practising {{tool}} | upper"
