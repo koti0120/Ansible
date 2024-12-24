@@ -15,3 +15,8 @@
       subject: DEVOPS
     ansible.builtin.debug:
       msg: "lower case is: {{subject | lower}}"
+  - name: remove duplicates
+    vars:
+      numbers: [ 1,2,3,3,2,4,1,5 ]
+    ansible.builtin.debug:
+      msg: "after removing duplicates is: {{numbers | unique}}"
