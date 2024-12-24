@@ -20,3 +20,8 @@
       numbers: [ 1,2,3,3,2,4,1,5 ]
     ansible.builtin.debug:
       msg: "after removing duplicates is: {{numbers | unique}}"
+  - name: print min and maximum numbers
+    vars:
+      numbers: [ 10,20,150,250,845,999]
+    ansible.builtin.debug:
+      msg: "max number is: {{numbers | max}}, min number is: {{numbers | min}}"
