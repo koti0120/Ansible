@@ -9,4 +9,4 @@
     vars:
       tool: ansible
     ansible.builtin.debug:
-      msg: "we are practising {{tool}} | upper"
+      msg: "we are practising {{tool | upper}} "
